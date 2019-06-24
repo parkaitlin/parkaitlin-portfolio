@@ -1,5 +1,9 @@
 import React, {Component} from "react"
-import Banner from '../components/Banner'
+import './index.css'
+import Header from "../components/Header"
+import Banner from "../components/Banner"
+import Footer from "../components/Footer"
+import Main from "../components/Main"
 
 class Portfolio extends Component {
   state = {
@@ -7,7 +11,12 @@ class Portfolio extends Component {
   }
   render(){
     return(
-      <Banner />
+      <>
+        <Header />
+        <Banner />
+        <Main />
+        <Footer />
+      </>
     )
   }
 } 
