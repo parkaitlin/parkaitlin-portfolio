@@ -1,3 +1,15 @@
-import React from "react"
+import React, {Component} from "react"
+import Banner from '../components/Banner'
 
-export default () => <div>Hello world!</div>
+class Portfolio extends Component {
+  state = {
+
+  }
+  render(){
+    return(
+      <Banner />
+    )
+  }
+} 
+  
+export default Portfolio
