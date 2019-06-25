@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiceD20 } from '@fortawesome/free-solid-svg-icons'
 
+
 const HeaderTop = styled.header`
   color: white;
   background-color: transparent;
@@ -20,20 +21,22 @@ const HeaderTop = styled.header`
   margin: 0;
   top: 0;
   width: 100%;
+  animation: fadeIn 7s;
   
   p {
-    font-size: .8em;
+    font-size: 1em;
+    font-family: 'Abel', sans-serif;
     padding: 0 1.5em;
   }
 
-  /* p:hover {
+  p:hover {
     strong {
-      background-color: #cee8ce;
+      background-color: #00ffaa;
     }
     span {
-      color: #cee8ce;
+      color: #00ffaa;
     }
-  } */
+  }
   strong {
     background-color: #fff;
     color: rgb(43, 49, 85);
@@ -46,12 +49,21 @@ const HeaderTop = styled.header`
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+    font-family: 'Abel', sans-serif;
   }
   a {
-    font-size: .8em;
+    font-size: 1.25em;
     padding: 0 1em;
-    color: #fff;
+    color: rgb(43, 49, 85);
     text-decoration: none;
+  }
+  @keyframes fadeIn {
+    from { 
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `
 
