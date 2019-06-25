@@ -64,10 +64,15 @@ const ProjectBox = styled.section`
   box-shadow: inset -10px -15px 30px 4px rgba(0,0,0,0.31);
   height: 23em;
   
-  .project-img {
+  .project-img-l {
     width: 45%;
     align-self: center;
-    padding: 0.2em 0 1em 2.5em;
+    padding: 0 0 1em 2.5em;
+  }
+  .project-img-r {
+    width: 45%;
+    align-self: center;
+    padding: 0 2.5em 1em 0;
   }
   img{
     width: 100%;
@@ -175,7 +180,7 @@ const Main = (props)=>{
         <h2>Projects</h2>
       </header>
       <ProjectBox>
-        <div className="project-img">
+        <div className="project-img-l">
           <img src="imgs/cactusTour.png" alt="" />
         </div>
         <div className="content">
@@ -220,12 +225,12 @@ const Main = (props)=>{
             </ul>
           </div>
         </div>
-        <div className="project-img">
+        <div className="project-img-r">
           <img src="imgs/winepost.png" alt="" />
         </div>
       </ProjectBox>
       <ProjectBox>
-        <div className="project-img">
+        <div className="project-img-l">
           <img src="imgs/mind8full.png" alt="" />
         </div>
         <div className="content">
@@ -270,7 +275,7 @@ const Main = (props)=>{
             </ul>
           </div>
         </div>
-        <div className="project-img">
+        <div className="project-img-r">
           <img src="imgs/hexasays.png" alt="" />
         </div>
       </ProjectBox>
