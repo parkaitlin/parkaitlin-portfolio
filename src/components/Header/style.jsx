@@ -1,11 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiceD20 } from '@fortawesome/free-solid-svg-icons'
-
-
-const HeaderTop = styled.header`
+export const HeaderTop = styled.header`
   color: white;
   background-color: transparent;
   box-shadow: none;
@@ -54,7 +49,7 @@ const HeaderTop = styled.header`
   a {
     font-size: 1.25em;
     padding: 0 1em;
-    color: rgb(43, 49, 85);
+    color: #fff;
     text-decoration: none;
   }
   @keyframes fadeIn {
@@ -66,19 +61,3 @@ const HeaderTop = styled.header`
     }
   }
 `
-
-const Header = (props)=>{
-  return(
-    <HeaderTop>
-        <p>
-          <strong>Kaitlin</strong>
-          <span>Park</span>
-        </p>
-        <nav>
-          <a className="menu" href="javascript:;">Menu <FontAwesomeIcon icon={faDiceD20} className="icon" /></a>
-        </nav>
-    </HeaderTop>
-  )
-}
-
-export default Header
