@@ -207,6 +207,7 @@ export const FirstProject = styled.section`
     justify-content: center;
     align-items: center;
     height: 8em;
+    margin-top: 1.5em;
   }
   .project-header > h2::after {
     background-color: #fff;
