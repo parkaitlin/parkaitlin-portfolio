@@ -17,7 +17,7 @@ const Footer = (props)=>{
         <ul className="copyright">
           <li>&copy; Kaitlin Park</li>
           <li className="email">Email: <span>parkaitlin@gmail.com</span></li>
-          <li className="cell">Phone: <span>+1(714) 406-0143</span></li>
+          <li className="cell">Phone: <span>+1 (714) 406-0143</span></li>
         </ul>
       </InnerFooter>
     </FootFooter>

@@ -18,7 +18,7 @@ const Banner = (props)=>{
         </div>
         <ul className="icons">
           <li><a href="https://github.com/parkaitlin"><FontAwesomeIcon icon={faGithubSquare} className="icon" /></a></li>
-          <li className="email-phone">parkaitlin@gmail.com <span>+1(714) 406-0143</span></li>
+          <li className="email-phone">parkaitlin@gmail.com <span>+1 (714) 406-0143</span></li>
           <li><a href="https://www.linkedin.com/in/parkaitlin/"><FontAwesomeIcon icon={faLinkedin} className="icon" /></a></li>
         </ul>
       </div>
