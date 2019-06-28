@@ -181,6 +181,9 @@ export const BannerSection = styled.section`
     .kaitlin {
       color: #00ffaa;
     } 
+    .email-phone > span {
+      color: #00ffaa;
+    }
   } 
 
   @keyframes fadeFromLeft {
