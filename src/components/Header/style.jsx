@@ -5,9 +5,6 @@ export const HeaderTop = styled.header`
   background-color: transparent;
   box-shadow: none;
   position: absolute;
-  /* transition: opacity 2.5s ease;
-  transition-delay: .75s; */
-  
   display: flex;
   height: 3.25em;
   left: 0;
@@ -16,12 +13,13 @@ export const HeaderTop = styled.header`
   margin: 0;
   top: 0;
   width: 100%;
-  animation: fadeIn 7s;
+  animation: focusIn 1.6s ease-out;
   
   p {
     font-size: 1em;
     font-family: 'Abel', sans-serif;
     padding: 0 1.5em;
+    transition: .6s;
   }
 
   p:hover {
@@ -52,12 +50,16 @@ export const HeaderTop = styled.header`
     color: #fff;
     text-decoration: none;
   }
-  @keyframes fadeIn {
-    from { 
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  @keyframes focusIn {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
   }
 `

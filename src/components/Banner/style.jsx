@@ -6,8 +6,7 @@ export const BannerSection = styled.section`
   background-position: right;
   background-size: 50%;
   background-repeat: no-repeat;
-  /* animation: fadeIn 2s */
-  /* background-image: linear-gradient(90deg, rgb(35, 23, 56), rgb(43, 49, 85), rgb(55, 107, 107)); */
+  animation: focusIn 1.6s ease-out;
   color: white;
   display: flex;
   align-items: center;
@@ -33,13 +32,13 @@ export const BannerSection = styled.section`
     font-family: 'Abel', sans-serif;
     letter-spacing: .1em;
     font-size: 1.2em;
-    animation: fadeFromRight 2s
+    animation: fadeFromRight 2.8s ease-out;
   }
   h1 {
     font-size: 3.25em;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .22em;
-    animation: fadeFromLeft 2s
+    animation: fadeFromLeft 3s ease-out;
   }
   h1::after {
     background-color: #fff;
@@ -189,7 +188,7 @@ export const BannerSection = styled.section`
   @keyframes fadeFromLeft {
     from { 
       opacity: 0;
-      transform: translateX(-4em);
+      transform: translateX(-10em);
     }
     to {
       opacity: 1;
@@ -199,7 +198,7 @@ export const BannerSection = styled.section`
   @keyframes fadeFromRight {
     from { 
       opacity: 0;
-      transform: translateX(4em);
+      transform: translateX(10em);
     }
     to {
       opacity: 1;
@@ -213,5 +212,17 @@ export const BannerSection = styled.section`
     to {
       opacity: 1;
     }
+  }
+  @keyframes focusIn {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
   }
 `

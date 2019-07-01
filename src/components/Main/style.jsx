@@ -61,7 +61,7 @@ export const MainBox = styled.div`
   .arrow {
       color: white;
       font-size: 30px;
-      animation: fadeInDown 2s;
+      animation: fadeInDown 2s ease;
       animation-iteration-count: infinite;
     }
     @keyframes fadeInDown {
@@ -69,6 +69,18 @@ export const MainBox = styled.div`
           opacity: 0.5;
           -webkit-transform: translate3d(0, -70%, 0);
           transform: translate3d(0, -75%, 0);
+      }
+      50% {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+      }
+    }
+    @keyframes smallFadeDown {
+      0%, 100% {
+          opacity: 0.5;
+          -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
       }
       50% {
           opacity: 1;
@@ -92,6 +104,11 @@ export const MainBox = styled.div`
       font-size: .9em;
       letter-spacing: .06em;
       text-align: justify;
+    }
+    .arrow {
+      font-size: 1.7em;
+      animation: smallFadeDown 2s ease;
+      animation-iteration-count: infinite;
     }
   }
 
