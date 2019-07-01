@@ -6,7 +6,7 @@ export const BannerSection = styled.section`
   background-position: right;
   background-size: 50%;
   background-repeat: no-repeat;
-  animation: focusIn 1.6s ease-out;
+  animation: focusIn 1.6s ease;
   color: white;
   display: flex;
   align-items: center;
@@ -32,13 +32,13 @@ export const BannerSection = styled.section`
     font-family: 'Abel', sans-serif;
     letter-spacing: .1em;
     font-size: 1.2em;
-    animation: fadeFromRight 2.8s ease-out;
+    animation: fadeFromRight 2.8s ease;
   }
   h1 {
     font-size: 3.25em;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .22em;
-    animation: fadeFromLeft 3s ease-out;
+    animation: fadeFromLeft 3s ease;
   }
   h1::after {
     background-color: #fff;
