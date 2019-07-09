@@ -21,7 +21,7 @@ export const HeaderTop = styled.header`
     padding: 0 1.5em;
     transition: .6s;
   }
-
+/* 
   p:hover {
     strong {
       background-color: #00ffaa;
@@ -29,7 +29,7 @@ export const HeaderTop = styled.header`
     span {
       color: #00ffaa;
     }
-  }
+  } */
   strong {
     background-color: #fff;
     color: rgb(43, 49, 85);

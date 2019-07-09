@@ -268,7 +268,7 @@ export const FirstProject = styled.section`
     }
   }
   @media (max-width: 479px){
-    height: 50em;
+    height: 55em;
     .first-project {
       display: flex;
       flex-direction: column;
