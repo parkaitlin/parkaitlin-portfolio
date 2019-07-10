@@ -11,7 +11,7 @@ const Main = (props)=>{
           <header>
             <h2>Skills</h2>
           </header>
-          <p className="skill-list">HTML5 | CSS3 | Javascript | Jquery | React |  Node.js | Express | MongoDB | Mongoose | EJS | Python | Flask | Jinja | PostgreSQL | SQL | SQLite | RESTful API | BCrypt | Postman | Git | Github | Heroku | Netlify | GatsbyJS | Terminal CLI | Bootstrap | Bulma | Material UI | Materialize CSS | Semantic UI </p>
+          <p className="skill-list">HTML5 | CSS3 | Javascript | Jquery | React |  Node.js | Express | MongoDB | Mongoose | EJS | Python | Flask | Jinja | SQL | PostgreSQL | MySQL | SQLite | RESTful API | BCrypt | Postman | Git | Github | Heroku | Netlify | GatsbyJS | Terminal CLI | Bootstrap | Bulma | Material UI | Materialize CSS | Semantic UI </p>
           <div className="arrow-box"><FontAwesomeIcon icon={faChevronDown} className="arrow" /></div>
         </div>
       </section>
