@@ -13,13 +13,11 @@ export const HeaderTop = styled.header`
   margin: 0;
   top: 0;
   width: 100%;
-  animation: focusIn 1.6s ease-out;
   
   p {
     font-size: 1em;
     font-family: 'Abel', sans-serif;
     padding: 0 1.5em;
-    transition: .6s;
   }
 /* 
   p:hover {

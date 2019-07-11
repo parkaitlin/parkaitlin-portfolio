@@ -6,7 +6,6 @@ export const BannerSection = styled.section`
   background-position: right;
   background-size: 50%;
   background-repeat: no-repeat;
-  animation: focusIn 1.6s ease;
   color: white;
   display: flex;
   align-items: center;
